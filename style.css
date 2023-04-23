@@ -6,24 +6,24 @@
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.logo {
+.header__logo {
   width: 100%;
 }
 
-.aaa .more_inf {
+.header .header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .aaa {
+  .header {
     text-align: center;
   }
 
@@ -35,13 +35,15 @@
   margin: 0 auto 0;
 }
 
-.task {
+.adding-form__input,
+.task-list__label_basic,
+.task-list__input_basic {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.adding-form__input-wrapper {
   display: flex;
 }
 

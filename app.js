@@ -10,8 +10,8 @@
 
 var taskInput=document.querySelector(".adding-form__input");//Add a new task.
 var addButton=document.querySelector(".adding-form__add-button");//first button
-var incompleteTaskHolder=document.getElementById("incompleted-tasks");//ul of #incompleted-tasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var incompleteTaskHolder=document.querySelector(".task-list_incompleted");//ul of #task-list_incompleted
+var completedTasksHolder=document.querySelector(".task-list_completed");//completed-tasks
 
 
 //New task list item
@@ -34,14 +34,14 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.classList.add('task');
+    label.classList.add('task-list__label_basic');
     label.classList.add('task-list__label_edit-mode');
 
     //Each elements, needs appending
     checkBox.type="checkbox";
     checkBox.classList.add("task-list__input");
     editInput.type="text";
-    editInput.classList.add("task");
+    editInput.classList.add('task-list__input_basic');
     editInput.classList.add("task-list__input");
     deleteButtonImg.classList.add("task-list__delete-image");
 
@@ -98,7 +98,7 @@ var editTask=function(){
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
-        if (listItem.parentNode.getAttribute("id") == "completed-tasks") {
+        if (listItem.parentNode.classList.contains("task-list_completed")) {
                 label.classList.remove("task-list__label_edit-mode");
                 label.classList.add("task-list__label_completed-tasks");
             }
@@ -149,7 +149,7 @@ var taskIncomplete=function(){
     console.log("Incomplete Task...");
 //Mark task as incomplete.
     //When the checkbox is unchecked
-    //Append the task list item to the #incompleted-tasks.
+    //Append the task list item to the #task-list_incompleted.
     var listItem=this.parentNode;
     var label = listItem.querySelector(".task-list__label_completed-tasks");
     if (label) {
