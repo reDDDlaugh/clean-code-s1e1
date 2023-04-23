@@ -29,7 +29,7 @@
 
 }
 
-.centered-main-page-element {
+.basic-panel {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -51,16 +51,16 @@
 }
 
 .task-list__item,
-.centered-main-page-element__h3 {
+.basic-panel__h3 {
   list-style: none;
 }
 
 .task-list__input,
-.topSectionForAddingElementToList__input {
+.adding-form__input {
   outline: none;
 }
 
-.topSectionForAddingElementToList__add-button,
+.adding-form__add-button,
 .task-list__delete-button,
 .task-list__edit-button {
   outline: none;
@@ -73,7 +73,7 @@
   cursor: pointer;
 }
 
-.topSectionForAddingElementToList__add-button:hover,
+.adding-form__add-button:hover,
 .task-list__delete-button:hover,
 .task-list__edit-button:hover {
   color: #3a3A3a;
@@ -81,8 +81,8 @@
 
 /* Heading */
 
-.centered-main-page-element__h3,
-.topSectionForAddingElementToList__label {
+.basic-panel__h3,
+.adding-form__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -93,7 +93,7 @@
 }
 
 .task-list__input[type="text"],
-.topSectionForAddingElementToList__input[type="text"] {
+.adding-form__input[type="text"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -107,18 +107,18 @@
 }
 
 .task-list__input[type="text"]:focus,
-.topSectionForAddingElementToList__input[type="text"]:focus {
+.adding-form__input[type="text"]:focus {
   color: #333;
 }
 
 /* New Task */
 
-.topSectionForAddingElementToList__label {
+.adding-form__label {
   display: block;
   margin: 0 0 20px;
 }
 
-.topSectionForAddingElementToList__input {
+.adding-form__input {
   width: 318px;
 }
 
@@ -150,7 +150,7 @@
 }
 
 .task-list__input[type="text"],
-.topSectionForAddingElementToList__input[type="text"] {
+.adding-form__input[type="text"] {
   width: 226px;
 }
 

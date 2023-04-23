@@ -8,9 +8,9 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.querySelector(".topSectionForAddingElementToList__input");//Add a new task.
-var addButton=document.querySelector(".topSectionForAddingElementToList__add-button");//first button
-var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
+var taskInput=document.querySelector(".adding-form__input");//Add a new task.
+var addButton=document.querySelector(".adding-form__add-button");//first button
+var incompleteTaskHolder=document.getElementById("incompleted-tasks");//ul of #incompleted-tasks
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
 
@@ -149,7 +149,7 @@ var taskIncomplete=function(){
     console.log("Incomplete Task...");
 //Mark task as incomplete.
     //When the checkbox is unchecked
-    //Append the task list item to the #incompleteTasks.
+    //Append the task list item to the #incompleted-tasks.
     var listItem=this.parentNode;
     var label = listItem.querySelector(".task-list__label_completed-tasks");
     if (label) {
