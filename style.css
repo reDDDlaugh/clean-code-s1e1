@@ -53,7 +53,7 @@
 }
 
 .task-list__item,
-.basic-panel__h3 {
+.basic-panel__label {
   list-style: none;
 }
 
@@ -83,7 +83,7 @@
 
 /* Heading */
 
-.basic-panel__h3,
+.basic-panel__label,
 .adding-form__label {
   color: #333;
   font-weight: 700;
